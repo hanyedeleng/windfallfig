@@ -3,8 +3,63 @@
 
 {% block title_block %}
     This is the about page
+
+{% endblock %}
+
+{% block bootstrap_block%}
+    <!--  Bootstrap core CSS  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+    <!--
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    -->
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/xue.css' %}"/>
 {% endblock %}
 
 {% block body_block %}
-    Say something here
+        <!--  movie short introduct and review  -->
+        <div class="container">
+          <!-- Example row of columns -->
+          <div class="row">
+            <div class="col-md-8">
+              <h2>About One Movie</h2>
+              <p>It is difficult to find good movies. One movies is a webside decide to change this situation. We only offer high quality movie. One movie per week. </p>
+            </div>
+          </div>
+
+          <hr>
+
+    <!--   movie poster     -->
+          <div>
+<!--
+              <div class="col-md-3">
+              </div>
+-->
+              <div class="col-md-2">
+                    <img src="{% static 'images/maybelogo.jpeg' %}" alt="about page logo" style="width:400%;height:auto;" >
+              </div>
+<!--
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-3">
+              </div>
+-->
+          </div>
+
+        </div> <!-- /container -->
+
+        <hr>
+
+<!-- footer   -->
+      <footer>
+        <p>&copy; Windfallfig 2017</p>
+      </footer>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<!--    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
 {% endblock %}
