@@ -3,7 +3,6 @@
 
 {% block title_block %}
     This is the about page
-
 {% endblock %}
 
 {% block bootstrap_block%}
@@ -19,42 +18,33 @@
 
 {% block body_block %}
         <!--  movie short introduct and review  -->
-        <div class="container">
-          <!-- Example row of columns -->
-          <div class="row">
-            <div class="col-md-8">
-              <h2>About One Movie</h2>
-              <p>It is difficult to find good movies. One movies is a webside decide to change this situation. We only offer high quality movie. One movie per week. </p>
+        <div class="container container-table">
+            <div class="row vertical-center-row">
+                <div class="text-ceter col-md-12 col-md-offset-1">
+                  <h2>About One Movie</h2>
+                  <p>It is difficult to find good movies. One movies is a webside help you change this situation. We recommend high quality movies. One movie per week. </p>
+                </div>
             </div>
-          </div>
 
           <hr>
 
-    <!--   movie poster     -->
+    <!--   image     -->
           <div>
-<!--
-              <div class="col-md-3">
+              <div class="row vertical-center-row">
+                  <div class="image-center col-md-4 col-md-offset-1">
+                    <img src="{% static 'images/maybelogo.jpeg' %}" alt="about page logo" style="width:260%;height:auto;" >
+                    <a href="/movies">Back to home page</a>
+                  </div>
               </div>
--->
-              <div class="col-md-2">
-                    <img src="{% static 'images/maybelogo.jpeg' %}" alt="about page logo" style="width:400%;height:auto;" >
-              </div>
-<!--
-              <div class="col-md-3">
-              </div>
-              <div class="col-md-3">
-              </div>
--->
           </div>
-
-        </div> <!-- /container -->
-
+        </div>
+        
         <hr>
 
 <!-- footer   -->
-      <footer>
+      <div class="navbar navbar-fixed-bottom">
         <p>&copy; Windfallfig 2017</p>
-      </footer>
+      </div>
         <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
