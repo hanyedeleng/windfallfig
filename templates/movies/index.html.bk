@@ -37,6 +37,19 @@
                 <li class="active"><a href="#">Home</a></li>
                 <li><a href="#">History</a></li>
                 <li><a href="/movies/about/">About</a></li>
+<!--
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li class="divider"></li>                    
+                    </ul>
+                </li>
+-->
             </ul>
             <div class="col-sm-3 col-md-3 pull-right">
                 <form class="navbar-form" role="search">
@@ -51,21 +64,38 @@
         </div>
     </nav>
 <!--  movie short introduct and review  -->
-    {% if movie %}
     <div class="container">
+      <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
-        <h2>{{ movie.name }}</h2>
-            {{ movie.basicinfo }}
+          <h2>The Shawshank Redemption</h2>
+<!--          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>-->
+<!--
+            <p><strong>Director:</strong> Frank Darabont<br>
+            <strong>Writers:</strong> Stephen King (short story "Rita Hayworth and Shawshank Redemption"), Frank Darabont (screenplay)<br>
+            <strong>Stars:</strong> Tim Robbins, Morgan Freeman, Bob Gunton
+            </p>
+-->
+            <dl>
+                <dt>Director:</dt>
+                <dd>-Frank Darabont</dd>
+                <dt>Writes:</dt>
+                <dd>-Stephen King (short story "Rita Hayworth and Shawshank Redemption"), Frank Darabont (screenplay)</dd>
+                <dt>Stars:</dt>
+                <dd>-Tim Robbins, Morgan Freeman, Bob Gunton</dd>
+            </dl>
+<!--          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
         </div>
         <div class="col-md-4">
           <h2>Synopsis</h2>
-          <p>{{ movie.synopsis }}</p>
+          <p>Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency. </p>
           <p><font size="3" color="red">Warning!</font> This synopsis may contain spoilers</p>
+<!--          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
        </div>
         <div class="col-md-4">
           <h2>Related links</h2>
-          <p>{{ movie.relatedlinks }}</p>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+<!--          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>-->
         </div>
       </div>
 
@@ -76,7 +106,7 @@
           <div class="col-md-3">
           </div>
           <div class="col-md-3">
-            <img src= "/static/{{ movie.posterpath }}" alt="movie poster">
+            <img src="{% static 'images/shawshank_redemption.jpg' %}" alt="Calibre de Cartier">
           </div>
           <div class="col-md-3">
           </div>
@@ -84,8 +114,7 @@
           </div>
       </div>
     </div> <!-- /container -->
-    {% endif %}
-
+    
     <hr>
 
 <!-- footer   -->
