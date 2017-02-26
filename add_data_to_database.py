@@ -25,7 +25,7 @@ def populate():
             {
                 "name":"Test data 1",
                 "pubdate":"2011-11-17T09:21:31+0000",
-                "posterpath":"images/maybelogo.jpeg",
+                "posterpath":"images/projector.jpg",
                 "basicinfo":"this is a test data",
                 "synopsis":"need to add something else",
                 "relatedlinks":"http://www.google.com/" }
