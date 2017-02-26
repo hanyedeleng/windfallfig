@@ -12,3 +12,9 @@ def index(request):
 # about page
 def about(request):
     return render(request,'movies/about.html')
+
+# history page
+def history(request):
+    currentMovie_list = Movie.objects.order_by('-pubdate')
+    context_dict = {'movies': currentMovie_list}
+    return render(request,'movies/history.html',context_dict)

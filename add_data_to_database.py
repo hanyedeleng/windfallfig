@@ -10,11 +10,18 @@ def populate():
     all_movies = [ 
             {
                 "name": "The Shawshank Redemption",
-                "pubdate": "2017-11-17T09:21:31+0000",
+                "pubdate": "2017-02-23T09:21:31+0000",
                 "posterpath":"images/shawshank_redemption.jpg",
                 "basicinfo":"Director:Frank Darabont;Writes:Stephen King,Frank Darabont;Stars:Tim Robbins, Morgan Freeman, Bob Gunton",
                 "synopsis":"Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
                 "relatedlinks":"http://www.imdb.com/title/tt0111161/" },
+            {
+                "name":"Forrest Gump",
+                "pubdate":"2017-02-16T09:21:31+0000",
+                "posterpath":"images/forrest_gump.jpg",
+                "basicinfo":"Director: Robert Zemeckis;Writers: Winston Groom, Eric Roth;Stars: Tom Hanks, Robin Wright, Gary Sinise",
+                "synopsis":"Forrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him.",
+                "relatedlinks":"http://www.imdb.com/title/tt0109830/" },
             {
                 "name":"Test data 1",
                 "pubdate":"2011-11-17T09:21:31+0000",

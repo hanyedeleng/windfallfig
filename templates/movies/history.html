@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="/movies/history/">History</a></li>
+                <li><a href="/movie/history/">History</a></li>
                 <li><a href="/movies/about/">About</a></li>
             </ul>
             <div class="col-sm-3 col-md-3 pull-right">
@@ -51,42 +51,45 @@
         </div>
     </nav>
 <!--  movie short introduct and review  -->
-    {% if movie %}
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-        <h2>{{ movie.name }}</h2>
-            {{ movie.basicinfo }}
-        </div>
-        <div class="col-md-4">
-          <h2>Synopsis</h2>
-          <p>{{ movie.synopsis }}</p>
-          <p><font size="3" color="red">Warning!</font> This synopsis may contain spoilers</p>
-       </div>
-        <div class="col-md-4">
-          <h2>Related links</h2>
-          <p>{{ movie.relatedlinks }}</p>
-        </div>
-      </div>
+    {% if movies %}
+        {% for movie in movies %}
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+            <h2>{{ movie.name }}</h2>
+                {{ movie.basicinfo }}
+            </div>
+            <div class="col-md-4">
+              <h2>Synopsis</h2>
+              <p>{{ movie.synopsis }}</p>
+              <p><font size="3" color="red">Warning!</font> This synopsis may contain spoilers</p>
+           </div>
+            <div class="col-md-4">
+              <h2>Related links</h2>
+              <p>{{ movie.relatedlinks }}</p>
+            </div>
+          </div>
 
-      <hr>
+          <hr>
 
-<!--   movie poster     -->
-      <div>
-          <div class="col-md-3">
+    <!--   movie poster     -->
+          <div>
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-3">
+                <img src= "/static/{{ movie.posterpath }}" alt="movie poster">
+              </div>
+              <div class="col-md-3">
+              </div>
+              <div class="col-md-3">
+              </div>
           </div>
-          <div class="col-md-3">
-            <img src= "/static/{{ movie.posterpath }}" alt="movie poster">
-          </div>
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-3">
-          </div>
-      </div>
-    </div>
+        </div>
+        {% endfor %}
     {% else %}
     <strong>No movie.</strong>
     {% endif %}
+    <a href="/movies">Back to home page</a>
 
     <hr>
 
