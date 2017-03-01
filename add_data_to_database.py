@@ -9,6 +9,14 @@ def populate():
 
     all_movies = [ 
             {
+                "name":"Luck-Key",
+                "pubdata":"2017-03-01T15:32:30+0000",
+                "posterpath":"images/luck_key.jpg",
+                "basicinfo":"Director: Gye-byeok Lee; Writers: Kenji Uchida, Yoon-mi Jang; Stars: Hae-jin Yoo,Yun-hie Jo",
+                "synopsis":"A reverse comedy that tells the story of a perfectionist assassin who falls and hits his head in a sauna, giving him amnesia. When a down-and-out actor switches locker keys with him, they switch lives until the hit-man, who soon becomes an action hero on TV, starts to remember things",
+                "relatedlinks:":"http://www.imdb.com/title/tt6175078/combined"
+            },
+            {
                 "name": "The Shawshank Redemption",
                 "pubdate": "2017-02-23T09:21:31+0000",
                 "posterpath":"images/shawshank_redemption.jpg",
