@@ -7,7 +7,7 @@ from django.db.models import Q
 
 # main page
 def index(request):
-    currentMovie_list = Movie.objects.latest('name')
+    currentMovie_list = Movie.objects.latest('pubdate')
     context_dict = {'movie': currentMovie_list}
     return render(request,'movies/index.html',context_dict)
 
@@ -17,7 +17,7 @@ def about(request):
 
 # history page
 def history(request):
-    currentMovie_list = Movie.objects.order_by('-pubdate')
+    currentMovie_list = Movie.objects.order_by('pubdate')
     context_dict = {'movies': currentMovie_list}
     return render(request,'movies/history.html',context_dict)
 
