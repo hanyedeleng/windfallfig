@@ -9,6 +9,13 @@ def populate():
 
     all_movies = [ 
             {
+                "name":"乘风破浪",
+                "pubdate":"2017-03-05T22:26:50+0000",
+                "posterpath":"images/chengfeng_polang.jpg",
+                "basicinfo":"导演:韩寒;主演: 邓超 / 彭于晏 / 赵丽颖",
+                "synopsis":"赛车手阿浪（邓超 饰）一直对父亲（彭于晏 饰）反对自己的赛车事业耿耿于怀，在向父亲证明自己的过程中，阿浪却意外卷入了一场奇妙的冒险。他在这段经历中结识了一群兄弟好友，一同闯过许多奇幻的经历，也对自己的身世有了更多的了解",
+                "relatedlinks":"https://movie.douban.com/subject/26862259/" },
+            {
                 "name":"Luck Key",
                 "pubdate":"2017-03-01T15:32:30+0000",
                 "posterpath":"images/luck_key.jpg",
