@@ -9,6 +9,14 @@ def populate():
 
     all_movies = [ 
             {
+                "name":"中国合伙人",
+                "pubdate":"2017-03-17T22:26:50+0000",
+                "posterpath":"images/zhongguohehuoren.jpg",
+                "basicinfo":"导演: 陈可辛;主演: 黄晓明 / 邓超 / 佟大为 / 杜鹃",
+                "synopsis":"20世纪80年代，三个怀有热情和梦想的年轻人在高等学府燕京大学的校园内相遇，从此展开了他们长达三十年的友谊和梦想征途。",
+                "relatedlinks":"https://movie.douban.com/subject/11529526/"
+            },
+            {
                 "name":"乘风破浪",
                 "pubdate":"2017-03-05T22:26:50+0000",
                 "posterpath":"images/chengfeng_polang.jpg",
