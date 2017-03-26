@@ -9,6 +9,14 @@ def populate():
 
     all_movies = [ 
             {
+                "name":"Letters from Iwo Jima",
+                "pubdate":"2017-03-26T22:26:50+0000",
+                "posterpath":"images/Letters_from_Iwo_Jima.jpg",
+                "basicinfo":"Director: Clint Eastwood;Writers: Iris Yamashita (screenplay), Iris Yamashita (story);Stars: Ken Watanabe, Kazunari Ninomiya, Tsuyoshi Ihara ",
+                "synopsis":"The story of the battle of Iwo Jima between the United States and Imperial Japan during World War II, as told from the perspective of the Japanese who fought it.",
+                "relatedlinks":"http://www.imdb.com/title/tt0498380/"
+            },
+            {
                 "name":"中国合伙人",
                 "pubdate":"2017-03-17T22:26:50+0000",
                 "posterpath":"images/zhongguohehuoren.jpg",
