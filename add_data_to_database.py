@@ -9,6 +9,14 @@ def populate():
 
     all_movies = [ 
             {
+                "name":"Sully",
+                "pubdate":"2017-04-05T22:26:50+0000",
+                "posterpath":"images/sully.jpg",
+                "basicinfo":"Director: Clint Eastwood;Writers: Todd Komarnicki, Chesley Sullenberger;Stars:  Tom Hanks, Aaron Eckhart, Laura Linney",
+                "synopsis":"The story of Chesley Sullenberger, an American pilot who became a hero after landing his damaged plane on the Hudson River in order to save the flight's passengers and crew.",
+                "relatedlinks":"http://www.imdb.com/title/tt3263904/"
+            },
+            {
                 "name":"Letters from Iwo Jima",
                 "pubdate":"2017-03-26T22:26:50+0000",
                 "posterpath":"images/Letters_from_Iwo_Jima.jpg",
