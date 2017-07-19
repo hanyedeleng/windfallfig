@@ -12,7 +12,7 @@ def populate():
                 "name":"Hachi: A Dog's Tale",
                 "pubdate":"2017-07-19T14:59:50+0000",
                 "posterpath":"images/hachi.jpg",
-                "basicinfo":"Director: Lasse Hallström;Writers: Stephen P. Lindsey (screenplay), Kaneto Shindô (motion picture "Hachiko monogatari");Stars: Richard Gere, Joan Allen, Cary-Hiroyuki Tagawa ",
+                "basicinfo":"Director: Lasse Hallström;Writers: Stephen P. Lindsey (screenplay), Kaneto Shindô;Stars: Richard Gere, Joan Allen, Cary-Hiroyuki Tagawa ",
                 "synopsis":"The true story about a dog's loyalty to its master, even after his death.",
                 "relatedlinks":"http://www.imdb.com/title/tt1028532/"
             },
