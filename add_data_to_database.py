@@ -7,12 +7,20 @@ from movies.models import Movie
 
 def populate():
 
-    all_movies = [ 
+    all_movies = [
+            {
+                "name":"Hachi: A Dog's Tale",
+                "pubdate":"2017-07-19T14:59:50+0000",
+                "posterpath":"images/hachi.jpg",
+                "basicinfo":"Director: Lasse Hallström;Writers: Stephen P. Lindsey (screenplay), Kaneto Shindô (motion picture "Hachiko monogatari");Stars: Richard Gere, Joan Allen, Cary-Hiroyuki Tagawa ",
+                "synopsis":"The true story about a dog's loyalty to its master, even after his death.",
+                "relatedlinks":"http://www.imdb.com/title/tt1028532/"
+            },
             {
                 "name":"Sully",
                 "pubdate":"2017-04-05T22:26:50+0000",
                 "posterpath":"images/sully.jpg",
-                "basicinfo":"Director: Clint Eastwood;Writers: Todd Komarnicki, Chesley Sullenberger;Stars:  Tom Hanks, Aaron Eckhart, Laura Linney",
+                "basicinfo":"Director: Clint Eastwood;Writers: Todd Komarnicki, Chesley Sullenberger;Stars: Tom Hanks, Aaron Eckhart, Laura Linney",
                 "synopsis":"The story of Chesley Sullenberger, an American pilot who became a hero after landing his damaged plane on the Hudson River in order to save the flight's passengers and crew.",
                 "relatedlinks":"http://www.imdb.com/title/tt3263904/"
             },
