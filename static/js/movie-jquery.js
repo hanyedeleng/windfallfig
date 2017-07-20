@@ -1,4 +1,4 @@
-$(".nav a").on("click", function(){
+$(".nav").on("click", function(){
    $(".nav-item").find(".active").removeClass("active");
    $(this).parent().addClass("active");
 });
