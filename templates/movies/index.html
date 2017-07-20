@@ -33,12 +33,11 @@
             <a class="navbar-brand" href="/movies/">One Movie</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav nav-tabs">
-                <li><a class="active" data-toggle="tab" href="/movies/">Home</a></li>
-                <li><a data-toggle="tab" href="/movies/history/">History</a></li>
-                <li><a data-toggle="tab" href="/movies/about/">About</a></li>
+            <ul class="nav navbar-nav">
+                <li class="nav-item"><a class="active" href="/movies/">Home</a></li>
+                <li class="nav-item"><a href="/movies/history/">History</a></li>
+                <li class="nav-item"><a href="/movies/about/">About</a></li>
             </ul>
-
             <div class="col-sm-3 col-md-3 pull-right">
                 <form class="navbar-form" role="search" method="get" action="/movies/search/">
                     <div class="input-group">
@@ -82,7 +81,7 @@
           <h2>Related links</h2>
           <p><a href="{{ movie.relatedlinks }}" target="_blank">{{ movie.relatedlinks }}</p>
         </div>
-        </div>
+      </div>
 
       <hr>
 
@@ -102,12 +101,12 @@
     {% endif %}
 
     <hr>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/movie-jquery.js' %}"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <!--    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+<!--    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
 {% endblock %}
