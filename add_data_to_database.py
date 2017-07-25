@@ -9,6 +9,14 @@ def populate():
 
     all_movies = [
             {
+                "name":"Pirates of the Caribbean: The Curse of the Black Pearl",
+                "pubdate":"2017-07-25T10:34:50+0000",
+                "posterpath":"images/Pirates_of_the_Caribbean_The_Curse_of_the_Black_Pearl.jpg",
+                "basicinfo":"Director: Gore Verbinski;Writers: Ted Elliott, Terry Rossio, Stuart Beattie, Jay Wolpert;Stars: Johnny Depp, Geoffrey Rush, Orlando Bloom",
+                "synopsis":"Blacksmith Will Turner teams up with eccentric pirate Captain Jack Sparrow to save his love, the governor's daughter, from Jack's former pirate allies, who are now undead.",
+                "relatedlinks":"http://www.imdb.com/title/tt0325980/?ref_=ttfc_fc_tt"
+            },
+            {
                 "name":"Hachi: A Dog's Tale",
                 "pubdate":"2017-07-19T14:59:50+0000",
                 "posterpath":"images/hachi.jpg",
