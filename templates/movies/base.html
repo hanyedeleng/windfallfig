@@ -34,9 +34,11 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/movies/">Home</a></li>
-                    <li><a href="/movies/history/">History</a></li>
-                    <li><a href="/movies/about/">About</a></li>
+                    {% with url_name=request.resolver_match.url_name %}
+                    <li class="{% if url_name == 'index' %}active{% endif %}"><a href="{% url 'index' %}">Home</a></li>
+                    <li class="{% if url_name == 'history' %}active{% endif %}"><a href="{% url 'history' %}">History</a></li>
+                    <li class="{% if url_name == 'about' %}active{% endif %}"><a href="{% url 'about' %}">About</a></li>
+                    {% endwith %}
                 </ul>
                 <div class="col-sm-3 col-md-3 pull-right">
                     <form class="navbar-form" role="search" method="get" action="/movies/search/">
